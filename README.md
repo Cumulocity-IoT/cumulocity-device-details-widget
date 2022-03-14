@@ -1,7 +1,7 @@
 # *Device Details Chart Widget*
 
 
-## Overview'
+## Overview
 
 This is an Angular widget, which is designed to display the Device Details both from the device-specific managed object and by fetching the information from the master data relating to DeviceDate.
 
@@ -23,9 +23,11 @@ Failure Prediction.
 | 1.3.x              | >= 1011.x.x| 2.x.x                 |
 | 1.2.x              | 1010.x.x   | 1.x.x                 |  
 
-![devicedetails](https://user-images.githubusercontent.com/89508319/158113700-4c99e346-677d-4d4e-830b-0ed2c7f221ac.JPG)
+![devicedetails](https://user-images.githubusercontent.com/89508319/158115263-33631dd6-93b6-43be-801b-f9e504a28324.JPG)
 
 
+
+![devicedetailback](https://user-images.githubusercontent.com/89508319/158115309-508ce9cf-d2e8-4476-992f-aaa2c0f5b508.JPG)
 
 
 ## Features
