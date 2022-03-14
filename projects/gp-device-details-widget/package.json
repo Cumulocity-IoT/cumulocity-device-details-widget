@@ -1,0 +1,9 @@
+{
+  "name": "gp-device-details-widget",
+  "version": "2.0.0",
+  "license": "Apache 2.0",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2"
+  }
+}

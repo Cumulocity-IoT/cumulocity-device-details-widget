@@ -1,0 +1,21 @@
+
+<div class="example-card">
+  <div>
+    <div class="card-content">
+      <div class="card-content-item">
+        <div *ngFor="let col of deviceDataColumnName">
+          <span class="text-truncate"><small class="text-muted">{{col}}:</small></span>
+        </div>
+      </div>
+      <div *ngIf="this.deviceDetails">
+        <div class="card-content-item card-text-value">
+          <div *ngFor="let col of deviceDataColumnvalues">
+            <span class="text-truncate" title="{{this.deviceDetails[col]}}"><small
+                class="text-muted">{{this.deviceDetails[col]}}</small></span>
+                
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
