@@ -3,7 +3,7 @@
 
 ## Overview'
 
-This is an Angular 7 widget, which is designed to display the Device Details both from the device-specific managed object and by fetching the information from the master data relating to DeviceDate.
+This is an Angular widget, which is designed to display the Device Details both from the device-specific managed object and by fetching the information from the master data relating to DeviceDate.
 
 
 The angular widget has the ability to summarize device-specific information relating to 
@@ -16,10 +16,36 @@ Scheduled Maintenance:
 Running Percent:
 Failure Prediction.
 
+### Please choose Device at Risk Widget release based on Cumulocity/Application builder version:
+
+|APPLICATION BUILDER | CUMULOCITY | DEVICE AT RISK WIDGET |
+|--------------------|------------|-----------------------|
+| 1.3.x              | >= 1011.x.x| 2.x.x                 |
+| 1.2.x              | 1010.x.x   | 1.x.x                 |  
+
+![devicedetails](https://user-images.githubusercontent.com/89508319/158113700-4c99e346-677d-4d4e-830b-0ed2c7f221ac.JPG)
+
+
+
+
+## Features
+
+
+### Runtime Widget Deployment?
+
+ - This widget support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.0/device-details-runtime-widget-2.0.0.zip)  and follow runtime deployment instructions from  [here](https://github.com/SoftwareAG/cumulocity-runtime-widget-loader).
 
 ## Supported Product Versions
 
-Cumulocity 1005.0.3 onward (should also work for an older version of Cumulocity)
+-  **App Builder:**  Tested with Cumulocity App Builder version 1.3.0
+
+**Requirements:**
+-   Git
+    
+-   NodeJS (release builds are currently built with  `v14.18.0`)
+    
+-   NPM (Included with NodeJS)
+
 
 ## Prerequisites
 
