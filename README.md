@@ -1,5 +1,5 @@
 
-# **Device Details Widget**[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>]
+# **Device Details Widget**<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>
 
 ## Overview
 
