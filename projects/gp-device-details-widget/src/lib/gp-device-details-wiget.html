@@ -10,7 +10,7 @@
       <div *ngIf="this.deviceDetails">
         <div class="card-content-item card-text-value">
           <div *ngFor="let col of deviceDataColumnvalues">
-            <span class="text-truncate" title="{{this.deviceDetails[col]}}"><small
+            <span style="overflow:visible;" title="{{this.deviceDetails[col]}}"><small
                 class="text-muted">{{this.deviceDetails[col]}}</small></span>
                 
           </div>
