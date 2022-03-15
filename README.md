@@ -190,7 +190,7 @@ This guide will teach you how to add widget in your existing or new dashboard.
     
 5.  Select  `Target Assets or Devices`
 
-6.
+6.In the config add the URL,Document list from url,add the coulmn headings and column names of the api
     
 6.  Click  `Save`
     
