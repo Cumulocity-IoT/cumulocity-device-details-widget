@@ -1,4 +1,3 @@
-
 /*
 * Copyright (c) 2020 Software AG, Darmstadt, Germany and/or its licensors
 *
