@@ -24,7 +24,7 @@ import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget
 import { InventoryService, IdentityService } from '@c8y/client';
 @Component({
   selector: 'lib-gp-device-details-widget',
-  templateUrl: './gp-device-details-wiget.html',
+  templateUrl: './gp-device-details-widget.html',
   styleUrls: ['card-fancy-example.css']
 })
 export class GpDeviceDetailsWidgetComponent implements OnInit {

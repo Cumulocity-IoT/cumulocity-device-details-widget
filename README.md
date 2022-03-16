@@ -10,8 +10,7 @@ The angular widget has the ability to summarize  information relating to the nam
 
 |APPLICATION BUILDER | CUMULOCITY | DEVICE DETAIL WIDGET |
 |--------------------|------------|-----------------------|
-| 1.3.x              | >= 1011.x.x| 2.x.x                 |
-| 1.2.x              | 1010.x.x   | 1.x.x                 |  
+| 1.3.x              | >= 1011.x.x| 2.x.x                 |   |  
 
 ![devicedetails](https://user-images.githubusercontent.com/89508319/158115263-33631dd6-93b6-43be-801b-f9e504a28324.JPG)
 
@@ -42,8 +41,6 @@ The angular widget has the ability to summarize  information relating to the nam
 **External dependencies:**
 
 ```
-"@angular/material": "^11.1.2"
-
 "@angular/cdk: "^11.2.13",
 
 ```
@@ -56,7 +53,7 @@ The angular widget has the ability to summarize  information relating to the nam
     
     ```
     
-    npm i @angular/cdk: "^11.2.13", "@angular/material": "^11.2.13",`
+    npm i @angular/cdk: "^11.2.13"
     
     ```
     
@@ -193,10 +190,20 @@ This guide will teach you how to add widget in your existing or new dashboard.
 6.In the config add the URL,Document list from url,add the coulmn headings and column names of the api
     
 6.  Click  `Save`
-    
 
 Congratulations! Device Details Widget is configured.
 
+## User Guide
+
+Click on Add Widget and Select Device Detail as a widget.In the configuration,you have to select the device group of interest.
+
+- **Target assets or devices:** User can select a device/asset or device/asset group.If group is selected,list of devices/assets will be display.
+- **Device Detail URL:** User can add the URL that needs to display for the columns
+- **Name of the Main document List from API:** User can add the document list from api.
+- **Table Column heading:** User can add the columns for your device details widget.
+- **Name of the Column names from API:** User can add the corresponding columns from api to display the device detail widget.
+
+    
 ----------
 This widget is provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.
 _____________________

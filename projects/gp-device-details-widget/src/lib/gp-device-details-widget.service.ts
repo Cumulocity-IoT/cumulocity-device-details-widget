@@ -26,7 +26,7 @@ export class GpDeviceDetailsWidgetService {
     response: any;
     deviceExternalId: any;
     // tslint:disable-next-line: max-line-length
-    restItemsUrl = 'http://democenter.gateway.webmethodscloud.com/gateway/DemoCenterAPIs/1.0/ConnectedDemosAPI/restSvc/getServiceRequestsForADevice/00001239';
+
     getAllDevices(id: string, pageToGet: number, allDevices: { data: any[], res: any }): Promise<IResultList<IManagedObject>> {
       const inventoryFilter = {
         pageSize: 50,
