@@ -1,5 +1,5 @@
 
-# Cumulocity Devices Details Widget[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.0/device-device-details-runtime-widget-2.0.0.zip)
+# Cumulocity Devices Details Widget[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.0/device-details-runtime-widget-2.0.0.zip)
 
 ## Overview
 
