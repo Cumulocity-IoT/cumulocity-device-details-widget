@@ -195,7 +195,7 @@ Congratulations! Device Details Widget is configured.
 
 ## User Guide
 
-Click on Add Widget and Select Device Detail as a widget.In the configuration,you have to select the device group of interest.
+Click on Add Widget and Select Device Detail as a widget.In the configuration,you have to select the device group of your interest.
 
 - **Target assets or devices:** User can select a device/asset or device/asset group.If group is selected,list of devices/assets will be display.
 - **Device Detail URL:** User can add the URL that needs to display for the columns
