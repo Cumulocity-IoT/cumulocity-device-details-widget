@@ -58,6 +58,7 @@ The angular widget has the ability to summarize  information relating to the nam
     ```
     
 2. Grab the Device  detail widget [Latest Release Binary](https://github.com/SoftwareAG/cumulocity-device-detail-widget/releases/download/2.0.0/device-details-runtime-widget-2.0.0.tgz)
+
 3. Install the Binary file in app builder.
     
     ```
