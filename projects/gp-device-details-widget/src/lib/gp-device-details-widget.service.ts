@@ -64,14 +64,10 @@ export class GpDeviceDetailsWidgetService {
      this.response = inventory.data;
      // tslint:disable-next-line: no-unused-expression
      (this.response);
-     if (this.response.hasOwnProperty('c8y_IsDevice')) {
+     if ((this.response.hasOwnProperty('c8y_IsDevice')) || (this.response.hasOwnProperty('c8y_IsAsset'))) {
         this.deviceExternalId = await this.getExternalId(config.device.id);
-        // tslint:disable-next-line: no-unused-expression
-        ('Child Device = ' + config.device.id);
-        // tslint:disable-next-line: no-unused-expression
-        ('External ID = ' + this.deviceExternalId);
       } else {
-        alert('Please select a device for this widget to fuction correctly');
+        alert('Please select a device or asset for this widget to fuction correctly');
       }
      return this.deviceExternalId;
   }
@@ -86,7 +82,7 @@ export class GpDeviceDetailsWidgetService {
     async getExternalIdForDevice(config) {
       const inventory = await this.inventory.detail(config.device.id);
       this.response = inventory.data;
-      if (this.response.hasOwnProperty('c8y_IsDevice')) {
+        if ((this.response.hasOwnProperty('c8y_IsDevice')) || (this.response.hasOwnProperty('c8y_IsAsset'))) {
         this.deviceExternalId = await this.getExternalId(config.device.id);
       } else {
         alert('Please select a device for this widget to fuction correctly');

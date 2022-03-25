@@ -4,13 +4,13 @@
   "key": "device-details-runtime-widget-application-key",
   "contentSecurityPolicy": "default-src 'self'",
   "icon": {
-    "class": "c8y-icon-device"
+    "class": "dlt-c8y-icon-devices"
   },
   "manifest": {
     "noAppSwitcher": true,
     "author":"Sandhya",
     "requiredPlatformVersion": ">=1011.0.0",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "license": "Apache 2.0"
 
   
