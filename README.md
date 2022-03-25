@@ -1,5 +1,5 @@
 
-# **Device Details Widget**<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>
+# Cumulocity Devices Details Widget[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.0/device-details-runtime-widget-2.0.0.zip)
 
 ## Overview
 
@@ -57,7 +57,8 @@ The angular widget has the ability to summarize  information relating to the nam
     
     ```
     
-2. Grab the Device  detail widget [Latest Release Binary](https://github.com/SoftwareAG/cumulocity-device-detail-widget/releases/download/2.0.0/device-details-runtime-widget-2.0.0.tgz)
+2. Grab the Device  detail widget [Latest Release Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.0/gp-device-details-widget-2.0.0.tgz)
+
 3. Install the Binary file in app builder.
     
     ```
