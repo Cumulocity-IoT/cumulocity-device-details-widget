@@ -1,7 +1,6 @@
 
 # Cumulocity Devices Details Widget[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.1/device-details-runtime-widget-2.0.1.zip)
 
-## Overview
 
 This is an Angular widget, which is designed to display the Device Details can fetch the details from the Api call  and can display data according to the fields provided.
 The angular widget has the ability to summarize  information relating to the names from the Api call.
