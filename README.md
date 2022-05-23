@@ -17,9 +17,6 @@ The angular widget has the ability to summarize  information relating to the nam
 
 ![devicedetailback](https://user-images.githubusercontent.com/89508319/158115309-508ce9cf-d2e8-4476-992f-aaa2c0f5b508.JPG)
 
-
-## Features
-
 ## Installation
 
 ### Runtime Widget Deployment?
