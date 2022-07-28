@@ -11,11 +11,11 @@ The angular widget has the ability to summarize  information relating to the nam
 |--------------------|------------|-----------------------|
 | 1.3.x              | >= 1011.x.x| 2.x.x                 |   |  
 
-![devicedetails](https://user-images.githubusercontent.com/89508319/158115263-33631dd6-93b6-43be-801b-f9e504a28324.JPG)
+![Device_Details_1](https://user-images.githubusercontent.com/99970126/181510210-2e16463e-0c57-4048-b458-4253a1c913ec.PNG)
 
 
+![Device_Details_2](https://user-images.githubusercontent.com/99970126/181510282-ce3ef990-77f1-4e1e-8b86-28805968befa.PNG)
 
-![devicedetailback](https://user-images.githubusercontent.com/89508319/158115309-508ce9cf-d2e8-4476-992f-aaa2c0f5b508.JPG)
 ## Features
 
 ## Installation
