@@ -20,7 +20,6 @@ import { GpDeviceDetailsWidgetService } from './gp-device-details-widget.service
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { DatePipe } from '@angular/common';
-import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget-config/gp-device-details-widget-config.component';
 import { InventoryService, IdentityService } from '@c8y/client';
 @Component({
   selector: 'lib-gp-device-details-widget',
@@ -38,35 +37,64 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
   columns: [];
   mainList: any;
   constructor(private http: HttpClient,
-              private datePipe: DatePipe,
-              private device: GpDeviceDetailsWidgetService,
-              public inventory: InventoryService,
-              public identity: IdentityService,
+    private datePipe: DatePipe,
+    private device: GpDeviceDetailsWidgetService,
+    public inventory: InventoryService,
+    public identity: IdentityService,
   ) { }
   async ngOnInit() {
     // tslint:disable-next-line: no-unused-expression
-    (this.config);
+    if (!this.config.propList) {
+      if (this.config.tableColumnValues) {
+        this.config.tableColumnValues = this.config.tableColumnValues.split(',');
+      }
+      if (this.config.tableColumnNames) {
+        this.config.tableColumnNames = this.config.tableColumnNames.split(',');
+      }
+      let propertyList = this.config.tableColumnValues.reduce((propertyList, field, index) => {
+        propertyList[this.config.tableColumnNames[index]] = field;
+        return propertyList;
+      }, {});
+      this.config.propList = Object.entries(propertyList).map(([label, value]) => ({ label, value }));
+    }
     this.deviceExtId = await this.device.getDeviceData(this.config);
     this.URL = this.config.deviceDetailsUrl;
     this.deviceUrl = this.URL + this.deviceExtId;
     this.getDeviceDetails().subscribe((devData) => {
-      // tslint:disable-next-line: no-unused-expression
-      (devData);
       if (devData[this.mainList][0]) {
         this.deviceDetails = devData[this.mainList][0];
+        this.extractKeyValuesFromObject();
       } else {
         this.deviceDetails = devData[this.mainList];
+        this.extractKeyValuesFromObject();
       }
     });
     if (this.config) {
       this.mainList = this.config.mainListName;
-      this.deviceDataColumnName = this.config.tableColumnNames.split(',');
-      // tslint:disable-next-line: no-unused-expression
-      (this.deviceDataColumnName);
-      this.deviceDataColumnvalues = this.config.tableColumnValues.split(',');
+      /* this.deviceDataColumnName = this.config.tableColumnNames.split(',');
+       // tslint:disable-next-line: no-unused-expression
+       (this.deviceDataColumnName);
+       this.deviceDataColumnvalues = this.config.tableColumnValues.split(',');*/
     }
   }
   getDeviceDetails(): Observable<any> {
     return this.http.get(this.deviceUrl);
+  }
+
+  async extractKeyValuesFromObject() {
+    this.deviceDetails = await this.toDotNotation(this.deviceDetails);
+  }
+
+  toDotNotation(obj, res = {}, current = '') {
+    for (const key in obj) {
+      let value = obj[key];
+      let newKey = (current ? current + "." + key : key);  // joined key with dot
+      if (value && typeof value === "object") {
+        this.toDotNotation(value, res, newKey);  // it's a nested object, so do it again
+      } else {
+        res[newKey] = value;  // it's not an object, so set the property
+      }
+    }
+    return res;
   }
 }
