@@ -1,5 +1,5 @@
 
-# Cumulocity Devices Details Widget[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.1/device-details-runtime-widget-2.0.1.zip)
+# Cumulocity Devices Details Widget[<img width="35" src="https://user-images.githubusercontent.com/67993842/97668428-f360cc80-1aa7-11eb-8801-da578bda4334.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.1.0/device-details-runtime-widget-2.1.0.zip)
 
 
 This is an Angular widget, which is designed to display the Device Details can fetch the details from the Api call  and can display data according to the fields provided.
@@ -22,7 +22,7 @@ The angular widget has the ability to summarize  information relating to the nam
 
 ### Runtime Widget Deployment?
 
- - This widget support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.1/device-details-runtime-widget-2.0.1.zip)  and follow runtime deployment instructions from  [here](https://github.com/SoftwareAG/cumulocity-runtime-widget-loader).
+ - This widget support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.1.0/device-details-runtime-widget-2.1.0.zip)  and follow runtime deployment instructions from  [here](https://github.com/SoftwareAG/cumulocity-runtime-widget-loader).
 
 ## Supported Product Versions
 
@@ -54,7 +54,7 @@ The angular widget has the ability to summarize  information relating to the nam
     
     ```
     
-2. Grab the Device  detail widget [Latest Release Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.0.1/gp-device-details-widget-2.0.1.tgz)
+2. Grab the Device  detail widget [Latest Release Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget/releases/download/2.1.0/gp-device-details-widget-2.1.0.tgz)
 
 3. Install the Binary file in app builder.
     
