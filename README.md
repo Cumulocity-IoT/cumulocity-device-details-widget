@@ -13,8 +13,6 @@ The angular widget has the ability to summarize  information relating to the nam
 
 ![Device_Details_1](https://user-images.githubusercontent.com/99970126/181510210-2e16463e-0c57-4048-b458-4253a1c913ec.PNG)
 
-
-![Device_Details_2](https://user-images.githubusercontent.com/99970126/181510282-ce3ef990-77f1-4e1e-8b86-28805968befa.PNG)
 ![Device-Details-Config](https://user-images.githubusercontent.com/99970126/188394087-58a3da72-1ae3-4812-8aef-a6afe3a64c9a.png)
 
 
