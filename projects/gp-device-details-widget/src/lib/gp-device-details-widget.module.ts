@@ -21,13 +21,15 @@ import * as preview from './preview-image'
 import { GpDeviceDetailsWidgetComponent } from './gp-device-details-widget.component';
 import { HttpClientModule, HttpClient, } from '@angular/common/http';
 import { GpDeviceDetailsWidgetService } from './gp-device-details-widget.service';
-import {DatePipe} from '@angular/common';
+import { DatePipe } from '@angular/common';
+import { NgSelectModule } from '@ng-select/ng-select';
 import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget-config/gp-device-details-widget-config.component';
 @NgModule({
   declarations: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   imports: [
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    NgSelectModule
   ],
   exports: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   entryComponents: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
@@ -36,9 +38,9 @@ import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget
     DatePipe,
     GpDeviceDetailsWidgetService,
     {
-    provide: HOOK_COMPONENTS,
-    multi: true,
-    useValue: {
+      provide: HOOK_COMPONENTS,
+      multi: true,
+      useValue: {
         id: 'device.details.mat.dashboard',
         previewImage: preview.previewImage,
         label: 'Device Details',
@@ -46,16 +48,16 @@ import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget
         component: GpDeviceDetailsWidgetComponent,
         configComponent: GpDeviceDetailsWidgetConfigComponent,
         data: {
-            ng1: {
-                options: {
-                noDeviceTarget: false,
-                noNewWidgets: false,
-                deviceTargetNotRequired: false,
-                groupsSelectable: true
-                }
+          ng1: {
+            options: {
+              noDeviceTarget: false,
+              noNewWidgets: false,
+              deviceTargetNotRequired: false,
+              groupsSelectable: true
             }
+          }
         }
-    }
+      }
     }],
 })
 export class GpDeviceDetailsWidgetModule { }

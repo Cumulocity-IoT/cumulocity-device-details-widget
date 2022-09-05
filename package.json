@@ -1,6 +1,6 @@
 {
   "name": "gp-device-details-project",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "Description": "This is an Angular widget, which is designed to display the Device Details can fetch the details from the Api call",
   "Author": "Sandhya",
   "license": "Apache 2.0",
@@ -47,7 +47,8 @@
     "ngx-bootstrap": "6.2.0",
     "rxjs": "~6.6.3",
     "url-loader": "^4.1.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "@ng-select/ng-select": "^6.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.18",
