@@ -70,8 +70,6 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.toDotNotation(this.deviceDetail);
-    // this.extractKeysFromObject(this.deviceDetail);
     if (!this.config.propList) {
       this.config.propList = [{ label: '', value: '' }];
     }
@@ -85,7 +83,6 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
       (await this.deviceDetailsService.getDeviceDataByID(this.config)).subscribe((data) => {
         this.extractKeysFromObject(data[this.config.mainListName]);
       });
-      //this.propertiesToDisplay = [];
     }
   }
 

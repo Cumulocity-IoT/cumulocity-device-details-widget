@@ -90,8 +90,8 @@ export class GpDeviceDetailsWidgetService {
   }
 
   async getDeviceDataByID(config) {
-   // let deviceExternalID = await this.getExternalIdForDevice(config);
-    let deviceDetailsURL = config.deviceDetailsUrl + '00001246';
+    let deviceExternalID = await this.getExternalIdForDevice(config);
+    let deviceDetailsURL = config.deviceDetailsUrl + deviceExternalID;
     return this.http.get(deviceDetailsURL);
   }
 }

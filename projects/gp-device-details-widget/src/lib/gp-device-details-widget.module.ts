@@ -21,7 +21,6 @@ import * as preview from './preview-image'
 import { GpDeviceDetailsWidgetComponent } from './gp-device-details-widget.component';
 import { HttpClientModule, HttpClient, } from '@angular/common/http';
 import { GpDeviceDetailsWidgetService } from './gp-device-details-widget.service';
-import { DatePipe } from '@angular/common';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget-config/gp-device-details-widget-config.component';
 @NgModule({
@@ -35,7 +34,6 @@ import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget
   entryComponents: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   providers: [
     HttpClient,
-    DatePipe,
     GpDeviceDetailsWidgetService,
     {
       provide: HOOK_COMPONENTS,

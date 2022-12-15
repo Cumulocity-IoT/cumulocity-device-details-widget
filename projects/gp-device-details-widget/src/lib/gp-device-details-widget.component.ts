@@ -19,7 +19,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { GpDeviceDetailsWidgetService } from './gp-device-details-widget.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { DatePipe } from '@angular/common';
 import { InventoryService, IdentityService } from '@c8y/client';
 @Component({
   selector: 'lib-gp-device-details-widget',
@@ -37,7 +36,6 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
   columns: [];
   mainList: any;
   constructor(private http: HttpClient,
-    private datePipe: DatePipe,
     private device: GpDeviceDetailsWidgetService,
     public inventory: InventoryService,
     public identity: IdentityService,

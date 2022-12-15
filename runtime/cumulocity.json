@@ -8,9 +8,9 @@
   },
   "manifest": {
     "noAppSwitcher": true,
-    "author":"Sandhya",
+    "author":"Sandhya - Software AG, Global Presales",
     "requiredPlatformVersion": ">=1011.0.0",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "license": "Apache 2.0"
 
   
