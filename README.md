@@ -5,6 +5,7 @@
 This is an Angular widget, which is designed to display the Device Details can fetch the details from the Api call  and can display data according to the fields provided.
 The angular widget has the ability to summarize  information relating to the names from the Api call.
 
+> ### ⚠️ This project is no longer under development. Please use [Cumulocity Device Details Widget Plugin](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin) for Application Builder >=2.x.x and Cumulocity >=1016.x.x⚠️
 ### Please choose Device Details Widget release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY | DEVICE DETAIL WIDGET |
